@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flyers &amp; Posters — Sahrdaya Silver Jubilee</title>
+  <meta name="description" content="Official flyers, posters and announcement artwork from the Sahrdaya College of Engineering &amp; Technology Silver Jubilee, 2026–27." />
+  <meta name="theme-color" content="#04051a" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Flyers &amp; Posters — Sahrdaya Silver Jubilee" />
+  <meta property="og:description" content="Official Silver Jubilee artwork, released through the celebration year." />
+  <meta property="og:image" content="assets/flyers/silver-jubilee-poster.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/img/logo.png" />
+  <link rel="apple-touch-icon" href="assets/img/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="aurora" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html" aria-label="Sahrdaya home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">
+          <span class="brand__name">Sahrdaya</span>
+          <span class="brand__sub">Silver Jubilee</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html#story">The Story</a>
+        <a href="index.html#inauguration">Inauguration</a>
+        <a href="index.html#programmes">Programmes</a>
+        <a href="index.html#journey">The Year</a>
+        <a href="flyers.html" class="is-active">Flyers</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn--primary nav__cta" href="index.html#inauguration">26 Sep 2026</a>
+
+      <button class="nav__toggle" type="button" aria-label="Menu" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="wrap">
+        <p class="eyebrow" style="justify-content:center">The Silver Jubilee Archive</p>
+        <h1>Flyers &amp; <em>Posters</em></h1>
+        <p class="lede" style="margin-inline:auto;text-align:center">
+          Official artwork released through the jubilee year — announcements, event posters and
+          campaign creatives. Tap any poster to open it full size.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:clamp(20px,3vw,36px)">
+      <div class="wrap">
+        <div class="flyer-grid" data-flyers="all"></div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="wrap">
+        <div class="cta reveal">
+          <p class="eyebrow" style="justify-content:center">More to come</p>
+          <h2>New artwork through the jubilee year</h2>
+          <p>
+            Posters for each programme and event will be published here as the Silver Jubilee
+            year unfolds — from the Grand Inauguration in September 2026 to the closing
+            ceremony in August 2027.
+          </p>
+          <div class="cta__actions">
+            <a class="btn btn--primary" href="index.html#journey">See the year ahead</a>
+            <a class="btn btn--ghost" href="index.html">Back to the home page</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <a class="brand" href="index.html">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span class="brand__text">
+              <span class="brand__name">Sahrdaya</span>
+              <span class="brand__sub">College of Engineering &amp; Technology</span>
+            </span>
+          </a>
+          <p class="footer__about">
+            Autonomous · Kodakara, Thrissur. Celebrating twenty-five years of engineering
+            education, research and community.
+          </p>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#story">The Story</a></li>
+            <li><a href="index.html#inauguration">Grand Inauguration</a></li>
+            <li><a href="index.html#programmes">Programmes</a></li>
+            <li><a href="index.html#journey">The Year Ahead</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Reach us</h4>
+          <ul class="footer__contact">
+            <li data-icon="pin"><span data-bind="contact.address">Kodakara P.O., Thrissur District, Kerala, India — 680684</span></li>
+            <li data-icon="phone"><a data-bind-href="contact.phoneHref" href="tel:+914802726650"><span data-bind="contact.phone">0480 272 6650</span></a></li>
+            <li data-icon="globe"><a data-bind-href="contact.website" href="https://www.sahrdaya.ac.in" target="_blank" rel="noopener">www.sahrdaya.ac.in</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__base">
+        <span>&copy; <span id="year">2026</span> Sahrdaya College of Engineering &amp; Technology. All rights reserved.</span>
+        <span data-bind="tagline">Honouring our legacy. Inspiring our future.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Poster viewer">
+    <button class="lightbox__close" type="button" aria-label="Close">&times;</button>
+    <div>
+      <img class="lightbox__img" src="" alt="" />
+      <p class="lightbox__cap"></p>
+    </div>
+  </div>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m0 0-7 7m7-7 7 7" /></svg>
+  </button>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
